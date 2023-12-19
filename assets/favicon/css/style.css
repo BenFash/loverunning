@@ -45,7 +45,6 @@ header a {
     color: inherit;
 }
 
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -92,36 +91,18 @@ main {
     margin-top: 47px;
 }
 
-/* Hero picture section */
+/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
-
-/* Reasons to run with us section */
-#reasons {
-    width: 90%;
-    margin: 20px, auto;
-}
-
-#reasons>h2 {
-    font-size: 280%;
-    margin-bottom: 20px;
-}
-
-div>hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-}
-
-
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
-    font-size: 170%;
+    font-size: 130%;
     position: absolute;
     bottom: 30px;
     width: 80%;
@@ -135,25 +116,52 @@ div>hr {
     color: #ffffff;
 }
 
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
+    list-style-type: none;
 }
 
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: #3a3a3a
+    color: #3a3a3a;
 }
 
-/* media query: tables and larger (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /*header*/
+    /* Header */
     nav {
         display: block;
         position: relative;
@@ -171,31 +179,30 @@ div>hr {
     }
 
     .nav-toggle-label {
-        display: none
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
-#logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0, 0, 5rem;
-}
-
-/* main content */
-main {
-    /* push main content down to accomadate larger header */
-    margin-top: 79px;
-}
-
-/* Hero */
-#cover-text {
-    width: 300px;
-    right: 50px;
-}
-
-/* media query: devices larger again (992px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
